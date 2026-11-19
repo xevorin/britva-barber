@@ -247,6 +247,7 @@
       html = stepHeader(4) + '<form class="book-form" novalidate>' +
         '<div class="field"><label for="b-name">Имя</label><input id="b-name" name="name" autocomplete="given-name" value="' + esc(state.name) + '" aria-describedby="b-name-err" required><span class="field__err" id="b-name-err"></span></div>' +
         '<div class="field"><label for="b-phone">Телефон</label><input id="b-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" value="' + esc(state.phone) + '" aria-describedby="b-phone-err" required><span class="field__err" id="b-phone-err"></span></div>' +
+        '<div class="field field--check"><input id="b-consent" name="consent" type="checkbox" aria-describedby="b-consent-err"' + (state.consent ? " checked" : "") + '><label for="b-consent">Даю <a href="consent.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> по <a href="privacy.html" target="_blank" rel="noopener">политике</a></label><span class="field__err" id="b-consent-err"></span></div>' +
         '</form>' + navButtons(true, "Записаться") + DEMO;
     }
 
@@ -297,6 +298,13 @@
       document.getElementById(p[0].id + "-err").textContent = p[1];
       if (p[1] && ok) { p[0].focus(); ok = false; }
     });
+    var c = form.elements.consent;
+    if (c) {
+      var cErr = c.checked ? "" : "Без согласия записаться не получится";
+      c.setAttribute("aria-invalid", cErr ? "true" : "false");
+      document.getElementById("b-consent-err").textContent = cErr;
+      if (cErr && ok) { c.focus(); ok = false; }
+    }
     return ok;
   }
 
@@ -341,6 +349,7 @@
       var form = modal.querySelector(".book-form");
       state.name = form.elements.name.value.trim();
       state.phone = form.elements.phone.value.trim();
+      state.consent = form.elements.consent ? form.elements.consent.checked : false;
       if (!validate(form)) return;
     }
     state.step++;
