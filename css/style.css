@@ -21,7 +21,6 @@ body {
   background: var(--bg);
   color: var(--cream);
   font: 500 16px/1.6 var(--body);
-  overflow-x: hidden;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -97,7 +96,7 @@ button { font: inherit; color: inherit; }
 .hero__facts { display: flex; flex-wrap: wrap; gap: 28px; margin-top: 40px; padding: 0; list-style: none; }
 .hero__facts b { display: block; font: 700 32px var(--display); color: var(--cream); }
 .hero__facts span { color: var(--grey); font-size: 14px; }
-.board { background: var(--bg-2); border: 1px solid var(--line); border-left: 4px solid var(--brass); border-radius: 4px 16px 16px 4px; padding: 24px; }
+.board { background: var(--bg-2); border: 1px solid #6b5a26; border-radius: 16px; padding: 24px; }
 .board__title { font-size: 26px; color: var(--cream); }
 .board__sub { color: var(--grey); font-size: 14px; margin-top: 8px; }
 .board__list { list-style: none; margin: 18px 0 0; padding: 0; }
