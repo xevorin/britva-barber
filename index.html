@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Бритва — барбершоп: мужские стрижки и бритьё</title>
+<meta name="description" content="Барбершоп «Бритва»: мужские стрижки от 900 ₽, борода и королевское бритьё. Онлайн-запись к мастеру за минуту.">
+<meta name="theme-color" content="#161616">
+<link rel="canonical" href="https://xevorin.github.io/britva-barber/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Бритва — барбершоп">
+<meta property="og:title" content="Бритва — барбершоп: мужские стрижки и бритьё">
+<meta property="og:description" content="Барбершоп «Бритва»: мужские стрижки от 900 ₽, борода и королевское бритьё. Онлайн-запись к мастеру за минуту.">
+<meta property="og:url" content="https://xevorin.github.io/britva-barber/">
+<meta property="og:image" content="https://xevorin.github.io/britva-barber/screenshot.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="logo" href="index.html" aria-current="page"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 44 L44 14 L50 20 L22 48 Z" fill="#C9A227"/><rect x="12" y="44" width="10" height="10" rx="2" transform="rotate(-45 17 49)" fill="#EDE6D2"/></svg><span>БРИТВА</span></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <ul class="nav__list"><li><a class="nav__link" href="services.html">Услуги</a></li><li><a class="nav__link" href="masters.html">Мастера</a></li><li><a class="nav__link" href="contacts.html">Контакты</a></li></ul>
+      <button type="button" class="btn" data-book>Записаться</button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <h1>Стрижка<br>за 45 минут</h1>
+      <p class="hero__lead">Записывайтесь онлайн: выберите услугу, мастера и свободное время. Кофе ждёт, пока вы в кресле.</p>
+      <div class="hero__actions">
+        <button type="button" class="btn" data-book>Записаться</button>
+        <a class="btn btn--ghost" href="services.html">Цены</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>3</b><span>мастера</span></li>
+        <li><b>10–21</b><span>без выходных</span></li>
+        <li><b>4.9</b><span>средняя оценка</span></li>
+      </ul>
+    </div>
+    <aside class="board" aria-labelledby="board-title">
+      <h2 id="board-title" class="board__title">Ближайшее свободное время</h2>
+      <p class="board__sub">Нажмите на время, чтобы записаться к этому мастеру.</p>
+      <ul class="board__list" data-free-board></ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="popular-title">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 id="popular-title">Популярное</h2>
+      <a class="link-more" href="services.html">Весь прайс</a>
+    </div>
+    <ul class="price-list" data-prices="popular"></ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="section__head"><h2 id="why-title">Как у нас</h2></div>
+    <div class="rules">
+      <article class="rule"><h3>Время по записи</h3><p>Слот длится столько, сколько идёт услуга. Следующий клиент не ждёт в коридоре.</p></article>
+      <article class="rule"><h3>Горячее полотенце</h3><p>Перед бритьём распариваем кожу, после наносим бальзам. Раздражения не будет.</p></article>
+      <article class="rule"><h3>Цена без сюрпризов</h3><p>Мытьё и укладка уже в стоимости. Сколько в прайсе, столько и на кассе.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="team-title">
+  <div class="wrap">
+    <div class="section__head"><h2 id="team-title">Мастера</h2><a class="link-more" href="masters.html">Подробнее о мастерах</a></div>
+    <div class="cards" data-masters data-heading="h3"></div>
+  </div>
+</section>
+<section class="band" aria-labelledby="band-title">
+  <div class="wrap band__in">
+    <div><h2 id="band-title">Запись без звонка</h2><p>Услуга, мастер, время и телефон. Четыре шага, около минуты.</p></div>
+    <button type="button" class="btn" data-book>Записаться онлайн</button>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p>Учебный проект · Егор Фарафонов · <a href="https://www.fl.ru/users/farafonovegor07/">профиль на FL.ru</a></p>
+    <p>«Бритва» — вымышленный барбершоп, <span data-year>2026</span></p>
+  </div>
+</footer>
+<button type="button" class="btn sticky-cta" data-book>Записаться</button>
+</body>
+</html>

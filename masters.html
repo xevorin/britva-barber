@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мастера — барбершоп «Бритва»</title>
+<meta name="description" content="Три мастера барбершопа «Бритва»: стаж от 3 до 9 лет, классика, фейды, борода. Запись к конкретному мастеру онлайн.">
+<meta name="theme-color" content="#161616">
+<link rel="canonical" href="https://xevorin.github.io/britva-barber/masters.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Бритва — барбершоп">
+<meta property="og:title" content="Мастера — барбершоп «Бритва»">
+<meta property="og:description" content="Три мастера барбершопа «Бритва»: стаж от 3 до 9 лет, классика, фейды, борода. Запись к конкретному мастеру онлайн.">
+<meta property="og:url" content="https://xevorin.github.io/britva-barber/masters.html">
+<meta property="og:image" content="https://xevorin.github.io/britva-barber/screenshot.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержимому</a>
+<header class="header">
+  <div class="wrap header__in">
+    <a class="logo" href="index.html"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M14 44 L44 14 L50 20 L22 48 Z" fill="#C9A227"/><rect x="12" y="44" width="10" height="10" rx="2" transform="rotate(-45 17 49)" fill="#EDE6D2"/></svg><span>БРИТВА</span></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Основное меню">
+      <ul class="nav__list"><li><a class="nav__link" href="services.html">Услуги</a></li><li><a class="nav__link" href="masters.html" aria-current="page">Мастера</a></li><li><a class="nav__link" href="contacts.html">Контакты</a></li></ul>
+      <button type="button" class="btn" data-book>Записаться</button>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <h1>Мастера</h1>
+    <p>Каждый ведёт своих клиентов и помнит, как вы стриглись в прошлый раз. Выберите мастера, и в записи останется только время.</p>
+  </div>
+</section>
+<section class="section" aria-label="Список мастеров">
+  <div class="wrap"><div class="cards" data-masters data-heading="h2" data-full></div></div>
+</section>
+<section class="band" aria-labelledby="band-title">
+  <div class="wrap band__in">
+    <div><h2 id="band-title">Запись без звонка</h2><p>Услуга, мастер, время и телефон. Четыре шага, около минуты.</p></div>
+    <button type="button" class="btn" data-book>Записаться онлайн</button>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap footer__in">
+    <p>Учебный проект · Егор Фарафонов · <a href="https://www.fl.ru/users/farafonovegor07/">профиль на FL.ru</a></p>
+    <p>«Бритва» — вымышленный барбершоп, <span data-year>2026</span></p>
+  </div>
+</footer>
+<button type="button" class="btn sticky-cta" data-book>Записаться</button>
+</body>
+</html>
